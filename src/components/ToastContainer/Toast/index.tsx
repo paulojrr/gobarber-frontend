@@ -7,7 +7,6 @@ import {
 } from 'react-icons/fi';
 
 import { ToastMessage, useToast } from '../../../context/ToastContext';
-
 import { Container } from './styles';
 
 interface ToastProps {
@@ -34,7 +33,7 @@ const Toast: React.FC<ToastProps> = ({ message }) => {
   }, [removeToast, message.id]);
 
   return (
-    <Container type={message.type} hasDescription={!!message.description}>
+    <Container type={message.type} hasdescription={!!message.description}>
       {icons[message.type || 'info']}
 
       <div>

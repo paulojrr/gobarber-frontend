@@ -1,9 +1,9 @@
 import React from 'react';
 
+import { ToastMessage } from '../../context/ToastContext';
 import Toast from './Toast';
 
 import { Container } from './styles';
-import { ToastMessage } from '../../context/ToastContext';
 
 interface ToastContainerProps {
   messages: ToastMessage[];
